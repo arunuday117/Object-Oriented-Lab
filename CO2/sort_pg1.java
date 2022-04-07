@@ -1,24 +1,25 @@
 import java.util.*;
-import java.lang.*;
 public class sort_pg1 {
 	public static void main(String[] args){
 		String a;
-		char temp;
+		String temp;
 		Scanner in = new Scanner(System.in);
-		System.out.println("Enter the string : ");
+		System.out.println("Enter the strings : ");
 		a=in.nextLine();
-		char s [] = a.toCharArray();
-		for(int i = 0;i < a.length();i++){
-			for(int j = 0;j < a.length();j++){
-				if(s[i]<s[j]){
-					temp = s[i];
-					s[i]=s[j];
-					s[j]=temp;
+		String sc[] = a.split(" ");
+		for(int i = 0;i < sc.length;i++){
+			for(int j = 0;j < sc.length;j++){
+				if(sc[i].compareTo(sc[j])<0){
+					temp = sc[i];
+					sc[i]=sc[j];
+					sc[j]=temp;
 				}
 			}
 		}
-		a = String.valueOf(s);
-		System.out.println(a);
+		for(int i = 0;i < sc.length;i++){
+			System.out.println(sc[i]);
+		}
+		
 		
 	}
 }
