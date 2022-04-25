@@ -11,7 +11,7 @@ public class String_manu {
 		in.nextLine();
 		System.out.print("Enter string : ");
 		String sd = in.nextLine();
-		System.out.println("Strings are equal" is "+sc.compareTo(sd));
+		System.out.println("Strings are equal"+sc.compareTo(sd));
 		System.out.println("Concatenation "+sc.concat(sd));
 		System.out.println("Check if the strings are equal "+sc.equals(sd));
 		System.out.println("Length of string "+sc+" "+sc.length());
